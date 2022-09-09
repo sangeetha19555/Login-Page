@@ -1,0 +1,52 @@
+.blackbutton {
+  background-color: black;
+  background-color: #0649a1;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.ant-btn {
+  height: 40px;
+  padding: 9px 22px;
+}
+.blackbutton:hover {
+  background-color: #f7a438;
+  color: #111;
+}
+.loading_spin {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+}
+.remove-btn {
+  font-size: 22px;
+  color: rgb(255, 0, 0);
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+/* divider for profile */
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(72, 70, 70);
+}
+
+@media screen and (max-width: 767px) {
+  /* body {
+    background-color: lightgreen;
+  } */
+  .remove-btn {
+    font-size: 22px;
+    color: red;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+}

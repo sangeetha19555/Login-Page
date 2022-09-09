@@ -1,0 +1,48 @@
+.layout {
+  height: 100vh;
+  overflow: scroll;
+  padding: 10px 50px;
+}
+
+.header {
+  height: 10%;
+  background-color: #0649a1;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.header h1 {
+  color: rgb(255, 254, 254);
+  font-size: 22px;
+  padding-top: 10px;
+}
+.menu-btn {
+  background-color: #fab253;
+  border: 1px solid white;
+  color: #0c0c0c;
+}
+.menu-btn:hover {
+  background-color: rgb(226, 224, 224);
+}
+.menu-btn span {
+  font-weight: 900;
+  color: #052d79;
+  transform: scale(1.2);
+}
+.content {
+  height: 80%;
+  border: 1px solid gray;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.486);
+  /* overflow: scroll; */
+}
+
+@media screen and (max-width: 600px) {
+  .layout {
+    padding: 10px 10px;
+  }
+}
