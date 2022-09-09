@@ -1,7 +1,7 @@
 import { Form, Input } from "antd";
 import React from "react";
 
-const { TextArea } = Input;
+// const { TextArea } = Input;
 export const PersonalInfo = () => {
   return (
     <div>
