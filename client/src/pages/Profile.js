@@ -9,14 +9,11 @@ import "../resources/common.css";
 
 const { TabPane } = Tabs;
 export const Profile = () => {
-  // const [loading, setLoading] = useState(false);
   const user = JSON.parse(localStorage.getItem("userInfo"));
   console.log("Profile Page", user.data._id);
 
   const onFinish = async (values) => {
     console.log(values, "values........");
-
-    // setLoading(true);
 
     try {
       const result = await axios.post(`${API}api/user/update`, {
@@ -25,16 +22,13 @@ export const Profile = () => {
       });
 
       localStorage.setItem("userInfo", JSON.stringify(result));
-      // setLoading(false);
       message.success("Profile updated Successfull");
     } catch (error) {
-      // setLoading(false);
       message.error("Profile update is Failed");
     }
   };
   return (
     <div>
-      {/* {loading && <Spin size="large" className="loading_spin" />} */}
       <DefaultLayout>
         <div className="profile_layout">
           <div className="update-profile p-4">
